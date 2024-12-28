@@ -8,13 +8,13 @@ I was pretty clueless when I first joined my role here as a AWS dev ops engineer
 
 I've learned a lot in my intern role, I believe one consumer rise the main areas of cloud infrastructure into the six areas.
 
-##what is cloud infrastructure?
+## what is cloud infrastructure?
 
-##why do we/ companies use cloud infra now? and using less on prem?
+## why do we/ companies use cloud infra now? and using less on prem?
 
-##how do we build, use, maintain, destroy cloud infrastructure resouces?
+## how do we build, use, maintain, destroy cloud infrastructure resouces?
 
-##What are the six main areas of cloud infrastructure? With specific examples from AWS.
+## What are the six main areas of cloud infrastructure? With specific examples from AWS.
 1. Core infrastructure
 2. security and governance
 3. data and application management
@@ -23,4 +23,13 @@ I've learned a lot in my intern role, I believe one consumer rise the main areas
 6. automation.
 
 
+| **Column 1**   | **Column 2**   | **Column 3**   |
+|-----------------|----------------|----------------|
+| Row 1 Col1     | Row 1 Col2     | Row 1 Col3     |
+| Row 2 Col1     | Row 2 Col2     | Row 2 Col3     |
+| Row 3 Col1     | Row 3 Col2     | Row 3 Col3     |
+| Row 4 Col1     | Row 4 Col2     | Row 4 Col3     |
+| Row 5 Col1     | Row 5 Col2     | Row 5 Col3     |
+| Row 6 Col1     | Row 6 Col2     | Row 6 Col3     |
+| Row 7 Col1     | Row 7 Col2     | Row 7 Col3     |
 
