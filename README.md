@@ -22,13 +22,20 @@ I've learned a lot in my intern role, I believe one consumer rise the main areas
 5. specialized areas
 6. automation.
 
-
-| **Cloud Infrastructure Area**   | **Key Tasks**   | **AWS Correspondence**   |
-|---------------------------------|-----------------|--------------------------|
-| Core Infrastructure             |                 |                          |
-| Security and Governance         |                 |                          |
-| Data and Application Management |                 |                          |
-| Monitoring and Optimization     |                 |                          |
-| Specialized Areas               |                 |                          |
-| Automation                      |                 |                          |
+| **Cloud Infrastructure Area**   | **Topic**       | **Key Tasks**   | **AWS Correspondence**   |
+|---------------------------------|-----------------|-----------------|--------------------------|
+| Core Infrastructure             | - Compute             |                 |                          |
+|                                 | - Storage              |                 |                          |
+|                                 | - Networking              |                 |                          |
+| Security and Governance         | - security              |                 |                          |
+|                                 | - governance and compliance              |                 |                          |
+| Data and Application Management | - data management              |                 |                          |
+|                                 | - application deployment              |                 |                          |
+|                                 | - AI/ML              |                 |                          |
+| Monitoring and Optimization     | - Minitoring and Observability              |                 |                          |
+|                                 | - cost optimization              |                 |                          |
+| Specialized Areas               | - edge and content delivery              |                 |                          |
+|                                 | - Hybrid and Multi-cloud              |                 |                          |
+|                                 | - IoT              |                 |                          |
+| Automation                      | - automation              |                 |                          |
 
