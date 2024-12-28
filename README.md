@@ -23,13 +23,12 @@ I've learned a lot in my intern role, I believe one consumer rise the main areas
 6. automation.
 
 
-| **Column 1**   | **Column 2**   | **Column 3**   |
-|-----------------|----------------|----------------|
-| Row 1 Col1     | Row 1 Col2     | Row 1 Col3     |
-| Row 2 Col1     | Row 2 Col2     | Row 2 Col3     |
-| Row 3 Col1     | Row 3 Col2     | Row 3 Col3     |
-| Row 4 Col1     | Row 4 Col2     | Row 4 Col3     |
-| Row 5 Col1     | Row 5 Col2     | Row 5 Col3     |
-| Row 6 Col1     | Row 6 Col2     | Row 6 Col3     |
-| Row 7 Col1     | Row 7 Col2     | Row 7 Col3     |
+| **Cloud Infrastructure Area**   | **Key Tasks**   | **AWS Correspondence**   |
+|---------------------------------|-----------------|--------------------------|
+| Core Infrastructure             |                 |                          |
+| Security and Governance         |                 |                          |
+| Data and Application Management |                 |                          |
+| Monitoring and Optimization     |                 |                          |
+| Specialized Areas               |                 |                          |
+| Automation                      |                 |                          |
 
