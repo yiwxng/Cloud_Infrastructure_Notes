@@ -39,3 +39,36 @@ I've learned a lot in my intern role, I believe one consumer rise the main areas
 |                                 | IoT                          |                 |                          |
 | Automation                      | automation                   |                 |                          |
 
+
+Services I used:
+- DMS
+- IAM
+- RDS
+- CloudWatch
+- CloudTrail
+- S3
+- Secret Manager
+
+
+## CloudTrail
+a service that does account-wise recording users  of api calls, user activities, time of action
+for auditing event, security monitoring, operational troubleshooting 
+
+types of event you can record 
+1. management event - control plane action (creation/deletion resources)
+2. Data event - high volume data plane actions (read/write to resources)
+3. CloudTrail event - unususal write api calls 
+
+How ?
+- cloudtrail can send logs to both cloudwatch and s3, where s3 cna have strict permission and is necessary as the event source
+
+
+Elements of CT
+- event history (90 days)
+- events (3 types)
+- Trails (delivers event to s3)
+- data lake (stores events recorded by CT, store for 7 years)
+- CT insights for unusual patterns
+
+
+  
