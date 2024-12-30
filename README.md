@@ -71,4 +71,11 @@ Elements of CT
 - CT insights for unusual patterns
 
 
+## IAM 
+
+
+actions with iam:
+- assume role - when the original account role allows a different account to temporary use the role's permission for a resources
+- creation of role and attach it to group, roles
+  - users get assigned to groups 
   
