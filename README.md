@@ -6,7 +6,18 @@ Any information below does not represent the opinion of the company that I worke
 
 I was pretty clueless when I first joined my role here as a AWS dev ops engineering intern. I have not used AWS before nor do I have much knowledge of infrastructure code.
 
-I've learned a lot in my intern role, I believe one consumer rise the main areas of cloud infrastructure into the six areas.
+
+## Terraform 
+The tool and language that allows you to define, manage, reuse and destroy cloud infra resources.
+
+terraform code - builds cloud infra resources 
+terraform state - the information that keep track of the resources created/ what terraform knows about the current resource status
+
+I've learned a lot in my intern role, I believe one can summarize the main areas of cloud infrastructure into the six areas.
+
+
+
+
 
 ## what is cloud infrastructure?
 
@@ -78,4 +89,6 @@ actions with iam:
 - assume role - when the original account role allows a different account to temporary use the role's permission for a resources
 - creation of role and attach it to group, roles
   - users get assigned to groups 
+
+
   
