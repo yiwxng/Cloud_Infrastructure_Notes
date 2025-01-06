@@ -6,6 +6,45 @@ Any information below does not represent the opinion of the company that I worke
 
 I was pretty clueless when I first joined my role here as a AWS dev ops engineering intern. I have not used AWS before nor do I have much knowledge of infrastructure code.
 
+## CI 
+
+## CD 
+
+
+## CICD Pipeline
+an automated (can be different level) process that has many sequential stages, where each stage will use certain tools and data in order to stream line swd, testing, deployment  
+where each stage of the pipeline is properly set up ahead of time for handoff consistent workflow -- the true automation in CICD
+
+### stages of pipeline and the tools they will use:
+1. Continuous Integration (CI):
+
+Trigger: When code is pushed, this initiates the CI process.
+Initialization: The CI system starts up based on the configuration.
+Job Execution:
+
+The 'build' job (compiling code or initializing Terraform)
+The 'test' job (running unit tests or Terraform plan)
+
+
+State Transitions: As these CI jobs complete, the pipeline state updates.
+Conditional Flows: Decisions made based on CI results (e.g., stopping if tests fail).
+Feedback Loop: Providing immediate feedback on build and test results.
+
+Continuous Delivery/Deployment (CD):
+3. Job Execution (continued):
+
+The 'deploy' job (applying Terraform changes)
+
+
+State Transitions: Updating pipeline state after deployment.
+Conditional Flows: Decisions about proceeding to deployment based on previous steps.
+Feedback Loop: Providing feedback on deployment results.
+Completion: The entire process, including deployment, concludes.
+
+### very simple ex
+cloud infra resources, config of cicd,  runner to run the cicd config,
+
+### what would the manual version of it look like?
 
 ## Terraform 
 The tool and language that allows you to define, manage, reuse and destroy cloud infra resources.
@@ -16,15 +55,15 @@ terraform state - the information that keep track of the resources created/ what
 Terraform work stages:
 1. write code for desired cloud infra
 2. terraform generates a plan of all the resources that needs to be created, modified and deleted base on your code
-3. apply
+  3.   the plan understand the order of resource creation. it uses dependecy graphs, the output of plan is the ordering the resources will be created.  
+4. apply - the plan to create the resources. 
 
-## CICD Pipeline
-a process that has many sequential stages, where each stage will use certain tools and data in order to stream line swd, testing, deployment  
-
+### yml file 
+the cicd config that contains the terraform stages, testing....
 
 
 ### terraform stages and CICD relationship
-Terraform stage (init, plan, apply) configuration (not action themselves) responsible for plan of deploying resources
+Terraform provides the what of the infra, and cicd provides the how and the wehn 
 
 
 
