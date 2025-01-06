@@ -13,17 +13,40 @@ The tool and language that allows you to define, manage, reuse and destroy cloud
 terraform code - builds cloud infra resources 
 terraform state - the information that keep track of the resources created/ what terraform knows about the current resource status
 
+Terraform work stages:
+1. write code for desired cloud infra
+2. terraform generates a plan of all the resources that needs to be created, modified and deleted base on your code
+3. apply
+
+## CICD Pipeline
+a process that has many sequential stages, where each stage will use certain tools and data in order to stream line swd, testing, deployment  
+
+
+
+### terraform stages and CICD relationship
+Terraform stage (init, plan, apply) configuration (not action themselves) responsible for plan of deploying resources
+
+
+
+### what if you want the resources to be created in a specific order?
+
+
+
 I've learned a lot in my intern role, I believe one can summarize the main areas of cloud infrastructure into the six areas.
 
+
+
+
+## what is devOps 
 
 
 
 
 ## what is cloud infrastructure?
 
-## why do we/ companies use cloud infra now? and using less on prem?
+### why do we/ companies use cloud infra now? and using less on prem?
 
-## how do we build, use, maintain, destroy cloud infrastructure resouces?
+### how do we build, use, maintain, destroy cloud infrastructure resouces?
 
 ## What are the six main areas of cloud infrastructure? With specific examples from AWS.
 1. Core infrastructure
