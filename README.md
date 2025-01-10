@@ -6,6 +6,10 @@ Any information below does not represent the opinion of the company that I worke
 
 I was pretty clueless when I first joined my role here as a AWS dev ops engineering intern. I have not used AWS before nor do I have much knowledge of infrastructure code.
 
+
+## TOOLS:
+- SFTP
+
 ## CI 
 
 ## CD 
