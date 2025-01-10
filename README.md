@@ -156,5 +156,8 @@ actions with iam:
 - creation of role and attach it to group, roles
   - users get assigned to groups 
 
+### iam resources : cloud and on-prem 
 
+#### on-prem
+- require access keys (why? because it is an external resource)
   
