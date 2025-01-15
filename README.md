@@ -165,8 +165,8 @@ Elements of CT
 ## IAM 
 
 
-actions with iam:
-- assume role - when the original account role allows a different account to temporary use the role's permission for a resources
+IAM - Role
+- assume role - when the original account role allows a different account to temporary use the role's permission for a resources, if not specified, can not assume role
 - creation of role and attach it to group, roles
   - users get assigned to groups 
 
@@ -174,4 +174,16 @@ actions with iam:
 
 #### on-prem
 - require access keys (why? because it is an external resource)
-  
+
+
+### IAM Users and Roles
+User - use when you need to grant long-term access, require access keys, actual user access to aws console - actual users, on-prem, services outside of aws(api) that needs its resources would need users
+Roles - temp security credentials for accessing aws resources, cross account access, allowing other aws services to have access to another service (example ec2 can assume role to access s3, without needing a user), federated identity ( allowing authenticated users across different systems) 
+
+### Using users and roles togather ?
+example: multi-environment s3 access for certain tools 
+- create users for long term credentials, used for certain tools to authenticate with aws
+- roles : different roles with different level of access/ s3 buckets
+- rls : grant users permission to assume the roles
+- why : seperation of concerns - user handle authentication, role manages authorization,
+- can adjust one, without changing much of the other one, iam user doesnt have direct access to s3
