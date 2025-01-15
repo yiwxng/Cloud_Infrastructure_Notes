@@ -27,7 +27,7 @@ I was pretty clueless when I first joined my role here as a AWS dev ops engineer
 ## CI 
 
 ## CD 
-
+te
 
 ## CICD Pipeline
 an automated (can be different level) process that has many sequential stages, where each stage will use certain tools and data in order to stream line swd, testing, deployment  
