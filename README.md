@@ -19,6 +19,27 @@ I was pretty clueless when I first joined my role here as a AWS dev ops engineer
 
 ## CONTAINERS - Kubernetes, EKS, Dockers
 
+### Pods
+- pod is the smallest unit in Kubernetes, pods can contain containers, attach pcv 
+- pods dont have direct access to pv, they have to mount the storage as a directory in the pod, it is an abstraction 
+- container will use the directory, but it is really the pv storing the data
+- pod will only the pvc name not the pv 
+
+
+### Volume 
+- 2 types: non-persisting, persisting 
+- non-persisting : empDir  - mostly used for container to share temp data 
+- persisting : PV (persisting volume) - indepedent of pod but can be attached to a pod 
+  - pv claim : the request from a pod (they only exist in pods level), the thing that connects pods and pv,  containers in same pod will use same pvc 
+
+
+
+#### Container, pods, volume 
+- application will run in a container
+- container do not persist data, when it is restarted it will lose all the data 
+- volume is a storage element that will data in the container 
+
+
 ### Relationship btw: Terraform, AWS, Kubernetes, Dockers
 (needs checking) 
 - dockers: used for creating and running container for applications
