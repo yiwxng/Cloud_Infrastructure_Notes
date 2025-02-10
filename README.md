@@ -38,7 +38,7 @@ what is a platform - the infra on which sw is executed, consisting hardware, clo
 - Terraform
 
 
-## NETWORK
+## NETWORK from [Cisco Network Basics](https://www.netacad.com/launch?id=f393c38f-b410-4d2b-8275-70e144273519&tab=curriculum&view=b287f8a2-5740-52f7-b4ac-e1ef04a8770d)
 network - connection of at least two 2 computer (wire/wireless) servers, mainframes to exchange info, resource and services. 
 internet - inter connected networks 
 network data 
