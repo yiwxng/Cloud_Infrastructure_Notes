@@ -7,6 +7,20 @@ Background:
 I was pretty clueless when I first joined my role here as a AWS dev ops engineering intern. I have not used AWS before nor did I have much knowledge of infrastructure code.
 
 
+## Platform engineering 
+what is a platform - the infra on which sw is executed, consisting hardware, cloud computing tools, os, and coordinating apps ( like differ os, hardwards - video editing 
+A good solutions architect looks at the existing environment and analyzes what technologies are available and what software product must be developed to provide the best solution for the problem that needs to be solved
+platform eng - building and maintaining the underlying platform that supports many solutions 
+rls - Solution architects leverage the capabilities provided by platform engineers to create effective business solutions, while platform engineers evolve the platform based on the needs identified by solution architects.
+
+## architectural thinking / system thinking 
+1. Understanding the technical details (the "how") of implementing infrastructure solutions.
+2. Grasping the strategic reasons (the "why") behind architectural decisions.
+3. Seeing how individual components fit into the larger ecosystem.
+4. Considering long-term implications of infrastructure choices.
+5. Aligning technical decisions with business goals and strategies.
+
+
 ## TOOLS:
 - SFTP
 - Kubernetes
@@ -15,6 +29,14 @@ I was pretty clueless when I first joined my role here as a AWS dev ops engineer
 - AWS
   - AWS CLI 
 - Terraform
+
+
+## NETWORK
+network - connection of at least two 2 computer (wire/wireless) servers, mainframes to exchange info, resource and services. 
+internet - inter connected networks 
+network data 
+
+network transmission speed and capacity 
 
 
 ## CONTAINERS - Kubernetes, EKS, Dockers
