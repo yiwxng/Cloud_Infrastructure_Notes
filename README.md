@@ -10,8 +10,10 @@ I was pretty clueless when I first joined my role here as a AWS dev ops engineer
 ## Platform engineering 
 what is a platform - the infra on which sw is executed, consisting hardware, cloud computing tools, os, and coordinating apps ( like differ os, hardwards - video editing 
 - A good solutions architect looks at the existing environment and analyzes what technologies are available and what software product must be developed to provide the best solution for the problem that needs to be solved
-- platform eng - building and maintaining the underlying platform that supports many solutions 
+- platform eng - building and maintaining the underlying platform that supports different applications/solutions 
 - rls - Solution architects leverage the capabilities provided by platform engineers to create effective business solutions, while platform engineers evolve the platform based on the needs identified by solution architects.
+
+understand what the customer wants/needs, make sure the infra resources we provide makes sense in the long run, secure, reliable, scalable, monitor, mainteinance.
 
 ### Designing a platform 
 - means thinking long-term and big-picture. 
