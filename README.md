@@ -317,3 +317,7 @@ example: multi-environment s3 access for certain tools
 - rls : grant users permission to assume the roles
 - why : seperation of concerns - user handle authentication, role manages authorization,
 - can adjust one, without changing much of the other one, iam user doesnt have direct access to s3
+
+### what if role is directly attached to the user?
+ an IAM role is directly attached to an IAM user, 
+ it means that the user is always allowed to assume that role without any additional conditions.

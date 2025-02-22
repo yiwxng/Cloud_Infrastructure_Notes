@@ -44,3 +44,17 @@ Use various tools to test and troubleshoot network connectivity
 
   
 ### bandwidth and throughout - explain network transmission speed and caps
+
+
+ ## Network Textbook 
+ ### 1. Foundation 
+ 1. applications relies on network 
+ 2. Network Requirement 
+ 3. Architecture 
+ 4. key element in a network 
+ 5. Network Performance Metric 
+
+
+ 1. applications relies on network 
+  a. webpage 
+  b. 
