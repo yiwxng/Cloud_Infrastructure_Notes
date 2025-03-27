@@ -54,7 +54,8 @@ network transmission speed and capacity
 
 ### Nodes 
 - physical or vm that provide computing resources for the cluster
-- can host many pods 
+- can host many pods
+- 
 
 ### Pods (logical application units) 
 - pods run on nodes, and scheduled to a specific node by k8s scheduler 
@@ -85,6 +86,40 @@ network transmission speed and capacity
 - Operating System = Kubernetes itself (the management layer)
 - Pod = An application process with its environment
 - Container = The actual executable program and its dependencies
+
+### Tree-like Diagram of Kubernetes (generated from Gitlab DUO )
+Cluster
+├── Nodes (Physical/Virtual Machines)
+│   ├── kubelet (Node agent)
+│   ├── kube-proxy (Network proxy)
+│   └── Container Runtime (Docker/containerd)
+│
+├── Control Plane Components
+│   ├── API Server (Central communication hub)
+│   ├── etcd (Configuration database)
+│   ├── Scheduler (Assigns pods to nodes)
+│   └── Controller Manager (Maintains desired state)
+│
+├── Workload Resources
+│   ├── Deployments (Manages ReplicaSets)
+│   │   └── ReplicaSets (Ensures pod count)
+│   │       └── Pods (Contains containers)
+│   │           └── Containers (Application code)
+│   ├── StatefulSets (For stateful applications)
+│   ├── DaemonSets (Runs pods on every node)
+│   └── Jobs/CronJobs (One-time/scheduled tasks)
+│
+├── Service Resources
+│   ├── Services (Stable network endpoint)
+│   ├── Ingress (External HTTP/S routing)
+│   └── NetworkPolicies (Network security rules)
+│
+└── Configuration Resources
+    ├── ConfigMaps (Non-sensitive configuration)
+    ├── Secrets (Sensitive configuration)
+    ├── Volumes/PersistentVolumes (Storage)
+    └── Namespaces (Virtual clusters)
+
 
 ### Relationship btw: Terraform, AWS, Kubernetes, Dockers
 (needs checking) 
