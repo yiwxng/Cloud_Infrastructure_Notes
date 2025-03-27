@@ -50,11 +50,21 @@ network transmission speed and capacity
 
 ## CONTAINERS - Kubernetes, EKS, Dockers
 
-### Pods
+### Clusters
+
+### Nodes 
+- physical or vm that provide computing resources for the cluster
+- can host many pods 
+
+### Pods (logical application units) 
+- pods run on nodes, and scheduled to a specific node by k8s scheduler 
 - pod is the smallest unit in Kubernetes, pods can contain containers, attach pcv 
 - pods dont have direct access to pv, they have to mount the storage as a directory in the pod, it is an abstraction 
 - container will use the directory, but it is really the pv storing the data
-- pod will only the pvc name not the pv 
+- pod will only the pvc name not the pv
+
+### Containers 
+- packaged application code and its dependencies 
 
 
 ### Volume 
@@ -64,12 +74,17 @@ network transmission speed and capacity
   - pv claim : the request from a pod (they only exist in pods level), the thing that connects pods and pv,  containers in same pod will use same pvc 
 
 
-
-#### Container, pods, volume 
+### Container, pods, volume 
 - application will run in a container
 - container do not persist data, when it is restarted it will lose all the data 
 - volume is a storage element that will data in the container 
 
+### Kubernetes vs. Laptop Analogy:
+- Cluster = The entire laptop (the complete system)
+- Node = The physical hardware (CPU, memory, disk)
+- Operating System = Kubernetes itself (the management layer)
+- Pod = An application process with its environment
+- Container = The actual executable program and its dependencies
 
 ### Relationship btw: Terraform, AWS, Kubernetes, Dockers
 (needs checking) 
