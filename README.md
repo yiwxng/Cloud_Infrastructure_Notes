@@ -94,12 +94,18 @@ Cluster
 │   ├── kube-proxy (Network proxy)
 │   └── Container Runtime (Docker/containerd)
 │
+
+
+
 ├── Control Plane Components
 │   ├── API Server (Central communication hub)
 │   ├── etcd (Configuration database)
 │   ├── Scheduler (Assigns pods to nodes)
 │   └── Controller Manager (Maintains desired state)
 │
+
+
+
 ├── Workload Resources
 │   ├── Deployments (Manages ReplicaSets)
 │   │   └── ReplicaSets (Ensures pod count)
@@ -109,11 +115,15 @@ Cluster
 │   ├── DaemonSets (Runs pods on every node)
 │   └── Jobs/CronJobs (One-time/scheduled tasks)
 │
+
+
 ├── Service Resources
 │   ├── Services (Stable network endpoint)
 │   ├── Ingress (External HTTP/S routing)
 │   └── NetworkPolicies (Network security rules)
 │
+
+
 └── Configuration Resources
     ├── ConfigMaps (Non-sensitive configuration)
     ├── Secrets (Sensitive configuration)
