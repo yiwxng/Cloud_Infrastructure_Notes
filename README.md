@@ -30,6 +30,24 @@ understand what the customer wants/needs, make sure the infra resources we provi
 5. Aligning technical decisions with business goals and strategies.
 
 
+### AWS PATTERN - Hub and Spoke Network Model with Centralized Connectivity and Distributed Authentication
+- centralized network infra - vpc endpoint, dc, in hub
+- distributed resources and iam identities across spoke
+- seperate network concerns with authentication
+
+### network security/authetication models 
+
+#### network based authentication 
+- network attribute based
+- vpc access where being on the corporate network grants access
+- fw rules allows traffic based on ip
+- system trust traffic from specific network segments
+- "if on network, then trusted"
+
+#### aws authentication 
+- credential based, using cryptographic signatures
+- can access aws from any network with valid credientals
+
 ## TOOLS:
 - SFTP
 - Kubernetes
