@@ -7,6 +7,9 @@ Background:
 I was pretty clueless when I first joined my role here as a AWS dev ops engineering intern. I have not used AWS before nor did I have much knowledge of infrastructure code.
 
 
+
+
+
 ## Platform engineering 
 what is a platform - the infra on which sw is executed, consisting hardware, cloud computing tools, os, and coordinating apps ( like differ os, hardwards - video editing 
 - A good solutions architect looks at the existing environment and analyzes what technologies are available and what software product must be developed to provide the best solution for the problem that needs to be solved
