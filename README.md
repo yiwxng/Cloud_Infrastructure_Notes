@@ -152,6 +152,16 @@ Cluster
     └── Namespaces (Virtual clusters)
 
 
+## Kubernetes terms and purpose 
+
+### Namespace
+A Kubernetes namespace isn't just a label — it controls:
+- What resources are grouped together
+- Who can access them (via RBAC)
+- How much they can use (via quotas)
+- How they talk to each other (via network policies)
+
+
 ### Relationship btw: Terraform, AWS, Kubernetes, Dockers
 (needs checking) 
 - dockers: used for creating and running container for applications
