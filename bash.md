@@ -16,7 +16,11 @@ quotes mainly used for string, not needed for number
 - ' - doesnt exand variables, pass the string as it is, can be used in eval and awk 
 - ` - expr `` pass what the numeric exp
 - \ escape char - treat the next char literally
-- ${}
+- ${} - When you want to use a variable value within a string or add other values to it
+  - echo "${name:-Anonymous}"  # prints $name if set, else "Anonymous"
+  - text="hello"
+            echo "${text:1:2}"  # prints "el"
+
 
 ```bash 
 USER=yi
@@ -27,10 +31,76 @@ echo 'Hello, $USER'     # Hello, $USER
 
 
 ### 1.4 redirection 
+- > overwrites if file exist
+- < Read input from a file instead of keyboard
+- >> doesn't Override and just append it to the end of the file
+- &> Redirect, standard output and standard error to this file
+- ordering
 
-### 1.5 pipe 
+
+### 1.5 pipe  | 
+- 
 
 ### 1.6 globbing * ? []
+- * 
+- ?
+- []
+
+
+## 2 Control flow 
+
+### 2.1 : logic 
+- if, 
+- then , 
+- elif, 
+- else
+
+### 2.2 condition
+- []
+- [[]]
+
+### 2.3 test 
+
+### 2.4 for, while, until 
+
+### 2.5 case multi-branch 
+
+
+## 3 CLI Tools
+
+### 3.1 Show file content
+- cat, 
+- less, 
+- head, 
+- tail 
+
+### 3.2 Search 
+- grep 
+- cut 
+- awk 
+- sed 
+
+### 3.3 
+- sort 
+- uniq
+- wc 
+- tr 
+- xargs 
+
+### 3.4  
+- find 
+- locate 
+- du 
+- df 
+
+### 3.5 exec, set, expr, eval
+
+### 3.6 
+- compare 
+- num 
+- files 
+string 
+
 
 
 
