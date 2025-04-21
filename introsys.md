@@ -8,4 +8,26 @@
     - Control I/O with devices, sockets, and files
     - Deliver signals and interrupts
 3. everything is a file in linux, file descriptors
-4. Touched on the idea of concurrency in process 
+4. Touched on the idea of concurrency in process f
+
+The operating system has a process table where it keeps trucks of every process currently running. 
+So a process table is a software in the OS colonel, it lives in Colonel memory, which is RAM. And it's it is used for scheduling, tracking and context switch.
+
+What is context switching?
+It is when a OS switch the CPU from running one process to another. Essentially what it does is pause what process it was doing – save everything – and now resume or start process B.
+A CPU can only run one process at a time per core, serve for when you have many applications running, with the operating system is actually doing contact, switching really fast between task.
+
+
+Each process has its own PID, appoint her to its memory map it status. Running, waiting, stopped, zombie. A list of open file descriptors, and other meta-data like parent PI.
+
+What are the status of a process?
+Running, ready, sleeping, stopped, zombie, dead/reaped
+
+| State           | Meaning |
+|------------------|---------|
+| **Running**      | Currently executing on the CPU |
+| **Ready**        | Waiting to be scheduled (has everything it needs) |
+| **Sleeping**     | Waiting for I/O (e.g. disk, network, user input) |
+| **Stopped**      | Suspended (paused by signal, user, or debugger) |
+| **Zombie**       | Process has terminated, but its parent hasn’t called `wait()` yet |
+| **Dead / Reaped**| Fully cleaned up and removed from the process table |
