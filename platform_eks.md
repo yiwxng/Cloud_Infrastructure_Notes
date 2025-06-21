@@ -92,3 +92,18 @@ So every time that we propose a new cloud service or infrastructure service, we 
    - Will this still work if our traffic doubles, 
    our security policy tightens, 
    a new team needs to be on boarded by a certain deadline
+
+
+
+
+
+# Enabling POSIX-Style S3 Access via Kubernetes CSI: My Work on Cloud-Native File System Integration
+
+drift detections - how to  (for shifting left 
+)
+will run plan to see if any changes, need to get a point where we can run all modules and see if there are anhy breaking changes 
+
+shift left - cloud does the merge 
+still need to wait for team to say yes to change 
+policies 
+poc - arch, sentinal, wiz, ip managenment (give me the next avaialble range), oracle database  
