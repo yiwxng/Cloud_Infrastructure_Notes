@@ -14,6 +14,25 @@
 
 4. Touched on the idea of concurrency in process f
 
+
+
+# Operating System Responsibilities — Summary Table
+
+|  Aspect                 | Description                                                                 |
+|--------------------------|---------------------------------------------------------------------------------|
+| **Process Management**    | Handles creation, scheduling, and termination of processes                      |
+| **Memory Management**     | Allocates RAM, handles paging, virtual memory, heap and stack                   |
+| **File System**           | Manages file storage, retrieval, hierarchy, and access permissions              |
+| **Device Management (I/O)**| Interfaces with hardware using device drivers (disk, keyboard, network, etc.)   |
+| **CPU Scheduling**        | Chooses which process gets to use the CPU and when                             |
+| **Permissions & Security**| Enforces access control via UIDs, GIDs, ACLs, and memory protection             |
+| **Inter-Process Communication (IPC)** | Enables communication between processes (pipes, shared memory, sockets)     |
+| **Networking**            | Implements network protocols (TCP/IP), socket management, and routing           |
+| **System Call Interface** | Provides the entry point for programs to request OS services (`read()`, etc.)  |
+| **Virtualization Support**| Isolates processes using containers (cgroups, namespaces) or VMs                |
+| **User Interface (optional)**| CLI or GUI to allow human users to interact with the system                    |
+
+
 ## Process table 
 The operating system has a process table where it keeps trucks of every process currently running. 
 So a process table is a software in the OS colonel, it lives in Colonel memory, which is RAM. 
@@ -38,3 +57,60 @@ Running, ready, sleeping, stopped, zombie, dead/reaped
 | **Stopped**      | Suspended (paused by signal, user, or debugger) |
 | **Zombie**       | Process has terminated, but its parent hasn’t called `wait()` yet |
 | **Dead / Reaped**| Fully cleaned up and removed from the process table |
+
+
+## OS Responsibilities and Hierarcy (with chatgpt help)
+
+```bash 
+
++----------------------------+   <- User Interface (Shell/GUI)
+|       User Space           |
+|   - Applications           |
+|   - Libraries              |
++----------------------------+
+|   System Call Interface    |   <- Bridge
++----------------------------+
+|        Kernel Space        |
+| - Process Manager          |
+| - Memory Manager           |
+| - File System              |
+| - Device Drivers (I/O)     |
+| - Scheduler                |
+| - Network Stack            |
+| - Security Manager         |
++----------------------------+
+|       Hardware             |
+
+
+```
+
+
+## Source code to running process : Compiling, Process, C Preprocessor, Process Model rls 
+
+1. preprocessor 
+2. compiling 
+3. 
+compiling - 
+is the abstraction that an operating system uses to represent and manage programs in execution (i.e., processes).
+
+It’s the mental and structural framework that defines:
+
+What a process is
+What resources a process has
+How processes behave
+How the OS should manage them
+
+
+## Process, Filesystem 
+
+file systems contains the source code, lib, other tools that source code needs to become a process 
+
+
+## Memory management 
+
+### what is a memory leak ?
+when a malloc-ed memory is not freed.
+
+why is it a concern when the os will clean up the resources/ memory for each process when they are done?
+
+Memory leak will be a problem if process calls malloc in a loop or many times. It will cause infinite asking of memory from the os, and heap will grow. which will cause the os 

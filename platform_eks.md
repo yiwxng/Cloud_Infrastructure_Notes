@@ -95,9 +95,25 @@ So every time that we propose a new cloud service or infrastructure service, we 
 
 
 
+# K8s and Linux rls 
+```bash 
+|  Linux Skill                     |  Why It's Useful in Kubernetes    |
+| -------------------------------- | ----------------------------------- |
+| **Processes & signals**          | Understand container lifecycle      |
+| **Filesystems & mounting**       | Volume mounts & PVs                 |
+| **Users & permissions**          | Pod security context, runAsUser     |
+| **Networking (netns, iptables)** | Pod-to-pod networking, services     |
+| **Systemd/service management**   | Managing kubelet, containerd, CRI   |
+| **cgroups & namespaces**         | Core to how containers are isolated |
+| **Syscalls & logs**              | Debugging and performance           |
+```
+
+# Enabling POSIX-Style S3 Access via Kubernetes CSI: My Work on Cloud-Native File System Integratio
+
+The first problem that i faced was a knowledge gap between linux (os) and k8s. but not knowing that is the foundational problem. 
+which made me feel like I was running in circles in the layer between my intro to system knowledge, and k8s eks addon. 
 
 
-# Enabling POSIX-Style S3 Access via Kubernetes CSI: My Work on Cloud-Native File System Integration
 
 drift detections - how to  (for shifting left 
 )
