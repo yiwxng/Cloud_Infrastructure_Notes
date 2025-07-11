@@ -115,11 +115,33 @@ which made me feel like I was running in circles in the layer between my intro t
 
 
 
-drift detections - how to  (for shifting left 
-)
-will run plan to see if any changes, need to get a point where we can run all modules and see if there are anhy breaking changes 
+# From writing Python file with functions and classes and methods to understanding K8. S
 
-shift left - cloud does the merge 
-still need to wait for team to say yes to change 
-policies 
-poc - arch, sentinal, wiz, ip managenment (give me the next avaialble range), oracle database  
+My previous understanding when coming into this internship was that applications that we use are built with languages such as Python or Java or C, where we talk about how our application will respond to inputs and what outputs they should get.
+However in my internship, my second task was to create a module which was a new pattern at the time for a new EKS add on.  I did not understand from what I learned and how it relates to what I'm doing for work.
+
+But now I think but below is a explanation and below is a attempt of my understanding from that to Kubernetes
+1. we first write our application using maybe object oriented programming language like Python
+2. We run the file in Python like "python app.py" -> OS will load the Python interpreter, Python.exe 
+3. the interpreter is a program itself so the OS create a process
+4. The interpreter will read the code and translate it into bytecode Which is executed by PVM
+5. If the interpreter isn't installed on the system the program won't run, which is why some apps would only work depending on the other person's environment
+6. which is why container comes into place. A container is a light way package with all libraries Dependencies included That allows the app to run in any environment
+7. Also if you want to allow your app to be used by more than 1. person at the same time then you would use the help of Kubernetes which will help you to run as many instances as your app as it is needed for your users
+
+
+Container - A special process that runs in a sandbox environment isolation from operating system
+It differs from regular process in that it has its isolated file system it sees its own processes as the only process in the system, It cannot access POST file unless mounted, and it cannot affect the host system without privilege. 
+And the key thing that isolates allows for isolation is name spaces and C groups. The namespaces isolates what the process can see and the C groups limits what the process can use.
+
+
+mounts 
+Amount point is a folder where contents of external devices appear, it is a path where another file system becomes accessible.
+On the container the mount point will introduce a new system as a new path in the existing containers file system
+
+
+# side note
+When I am understanding when I am understanding and dictating these notes I realize that this process of understanding and this model of thinking about the world which is computational model is really what draws me into computer science more and more. in object oriented programming we learn to see the world and as objects with classes with its own methods its own relationship. And the core principles of abstraction encapsulation inheritance and interface.
+And in I suppose system thinking, we view the world through scheduler, resources, file systems, users. 
+It is this model of organizing logically separating and organizing information that allows me to see the world differently. In a more structured and a different logical way of thinking
+
